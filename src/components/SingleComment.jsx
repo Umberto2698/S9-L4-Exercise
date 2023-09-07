@@ -6,7 +6,7 @@ const SingleComment = (prop) => {
       <button
         className="btn btn-danger"
         onClick={() => {
-          fetch("https://striveschool-api.herokuapp.com/api/comments/" + prop.display.elementId, {
+          fetch("https://striveschool-api.herokuapp.com/api/comments/" + prop.display._id, {
             method: "DELETE",
             headers: {
               Authorization:

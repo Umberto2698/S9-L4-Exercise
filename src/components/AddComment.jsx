@@ -9,7 +9,7 @@ class AddComment extends Component {
 
   sendComment = (e) => {
     e.preventDefault();
-    fetch("https://striveschool-api.herokuapp.com/api/comments/" + this.props.bookId, {
+    fetch("https://striveschool-api.herokuapp.com/api/comments/", {
       method: "POST",
       headers: {
         Authorization:
